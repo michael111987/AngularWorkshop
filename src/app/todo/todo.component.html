@@ -1,0 +1,11 @@
+<label>Task</label>
+<input type="text" class="form-control" [(ngModel)]="task">
+<button class="btn btn-primary" (click)="onButtonPress(); task = ''">Add task</button>
+<button class="btn btn-primary" [disabled]="task === ''" (click)="task = ''">Clear</button>
+<button class="btn btn-primary" (click)="todo = []">Clear</button>
+
+<div 
+  *ngFor="let todoItem of todo; let i = index"
+  [ngStyle]="{backgroundColor: i >= 5 ? 'red' : 'transparent'}"
+  [ngClass]="{'white-text': i >= 5}"
+  >{{todoItem}}</div>

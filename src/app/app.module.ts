@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AlertSuccessComponent } from './alert-success/alert-success.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AlertInfoComponent,
     AlertWarningComponent,
     AlertSuccessComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
