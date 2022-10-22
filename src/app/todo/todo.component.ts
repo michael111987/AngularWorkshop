@@ -11,8 +11,8 @@ export class TodoComponent implements OnInit {
   todo = [];
 
   onButtonPress() {
-    this.todo.push(this.task);
-    // this.todo.push(this.todo.length +1);
+    // this.todo.push(this.task);
+    this.todo.push(this.todo.length +1);
   }
 
   constructor() { }

@@ -12,7 +12,8 @@ First app
       <p>{{name}}</p>
       <button class="btn btn-success" [disabled]="name === ''" (click)="name = ''">Clear</button> -->
       <br>
-      <app-todo></app-todo>
+      <button class="btn btn-success" (click)="showTodo = !showTodo">Open todo list</button>
+      <p *ngIf="showTodo"><app-todo></app-todo></p>
 
 
   </div>
