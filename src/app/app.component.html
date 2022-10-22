@@ -1,4 +1,15 @@
 First app
-<app-alert-info></app-alert-info>
+<!-- <app-alert-info></app-alert-info>
 <app-alert-warning></app-alert-warning>
-<app-alert-success></app-alert-success>
+<app-alert-success></app-alert-success> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xd-12"></div>
+
+      <label>Name</label>
+      <input type="text" class="form-control" [(ngModel)]="name">
+      <p>{{name}}</p>
+      <button class="btn btn-success" [disabled]="name === ''" (click)="name = ''">Clear</button>
+  </div>
+</div>
