@@ -9,4 +9,11 @@ export class AppComponent {
   title = 'my-first-app';
   showTodo = false;
   buttonTodo = 'Open todo list';
+
+  showInfo = false;
+  infoText = '';
+  showWarning = false;
+  warningText = '';
+  showSuccess = true;
+  successText = '';
 }

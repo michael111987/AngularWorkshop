@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-alert-success',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alert-success.component.css']
 })
 export class AlertSuccessComponent implements OnInit {
+  @Input() alertText: {type: string, name: string, content: string};
 
   constructor() { }
 
