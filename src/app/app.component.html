@@ -9,9 +9,7 @@ First app
 
     <!-- <app-binding-task></app-binding-task> -->
 
-    <app-binding-task
-    (taskCreated)="onTaskCreated($event)"
-  ></app-binding-task>
+    <app-binding-task (taskCreated)="onTaskCreated($event)"></app-binding-task>
 
       <br>
       <button class="btn btn-success" (click)="showTodo = !showTodo; onTaskCreated($event)">Open todo list</button>

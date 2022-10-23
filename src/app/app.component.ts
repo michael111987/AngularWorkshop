@@ -26,6 +26,9 @@ export class AppComponent {
     this.showInfo = true;
   }
 
-
+onTest(){
+  debugger
+  console.log('test');
+}
 
 }
