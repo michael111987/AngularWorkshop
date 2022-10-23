@@ -12,8 +12,8 @@ export class TodoComponent implements OnInit {
 
   onButtonPress() {
     // this.todo.push(this.task);
-    debugger
-    console.log(this.todo.length +1);
+    // debugger
+    // console.log(this.todo.length +1);
     this.todo.push(this.todo.length +1);
   }
 

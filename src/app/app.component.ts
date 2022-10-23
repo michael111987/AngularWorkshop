@@ -10,10 +10,10 @@ export class AppComponent {
   showTodo = false;
   buttonTodo = 'Open todo list';
 
-  showInfo = false;
-  infoText = '';
+  showInfo = true;
+  infoText = 'info message';
   showWarning = false;
-  warningText = '';
+  warningText = 'warning message';
   showSuccess = true;
-  successText = '';
+  successText = 'success message';
 }

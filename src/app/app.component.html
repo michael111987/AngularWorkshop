@@ -3,9 +3,9 @@ First app
   <div class="row">
     <div class="col-xd-12"></div>
 
-    <app-alert-info *ngIf="showInfo"></app-alert-info>
+    <app-alert-info *ngIf="showInfo" [alertText]="infoText"></app-alert-info>
     <app-alert-warning *ngIf="showWarning"></app-alert-warning>
-    <app-alert-success *ngIf="showSuccess" [alertText]="'success message'"></app-alert-success>
+    <app-alert-success *ngIf="showSuccess" [alertText]="successText"></app-alert-success>
 
     <!-- <app-binding-task></app-binding-task> -->
 
