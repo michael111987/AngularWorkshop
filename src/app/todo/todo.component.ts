@@ -7,18 +7,18 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class TodoComponent implements OnInit {
 
-  @Output() taskCreated = new EventEmitter<{taskCreated: string, alert: string}>();
-  task = '';
+  @Output() taskCreated = new EventEmitter<{task: string, alert: string}>();
+  task = 'task';
   todo = [];
 
   onButtonPress() {
-    // this.todo.push(this.task);
+    this.todo.push(this.task);
     // debugger
     // console.log(this.todo.length +1);
-    this.todo.push(this.todo.length +1);
-
+    // this.todo.push(this.todo.length +1);
+// debugger
     this.taskCreated.emit({
-      taskCreated: this.task,
+      task: this.task,
       alert: 'info',
     })
   }
