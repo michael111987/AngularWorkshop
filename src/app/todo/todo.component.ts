@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoComponent implements OnInit {
 
+  @Output() taskCreated = new EventEmitter<{taskCreated: string, alert: string}>();
   task = '';
   todo = [];
 
@@ -15,6 +16,11 @@ export class TodoComponent implements OnInit {
     // debugger
     // console.log(this.todo.length +1);
     this.todo.push(this.todo.length +1);
+
+    this.taskCreated.emit({
+      taskCreated: this.task,
+      alert: 'info',
+    })
   }
 
   constructor() { }
