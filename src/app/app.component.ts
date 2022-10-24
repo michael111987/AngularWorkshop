@@ -18,17 +18,4 @@ export class AppComponent {
   showSuccess = true;
   successText = 'success message';
 
-  onTaskCreated(taskData: {task: string, alert: string}) {
-  // onTaskCreated(task: string, alert: string) {
-
-    debugger
-    this.infoText = taskData.task;
-    this.showInfo = true;
-  }
-
-onTest(){
-  debugger
-  console.log('test');
-}
-
 }
