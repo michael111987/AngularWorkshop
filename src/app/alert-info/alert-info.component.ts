@@ -7,6 +7,6 @@ import { Component, Input} from "@angular/core";
 })
 
 export class AlertInfoComponent{
-    @Input() alertText: {type: string, name: string, content: string};
+    @Input() alertText: string;
 
 }
