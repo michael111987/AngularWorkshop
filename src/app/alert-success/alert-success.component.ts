@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./alert-success.component.css']
 })
 export class AlertSuccessComponent implements OnInit {
-  @Input() alertText: {type: string, name: string, content: string};
+  @Input() alertText: string;
 
   constructor() { }
 
